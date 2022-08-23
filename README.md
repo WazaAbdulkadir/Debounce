@@ -12,6 +12,8 @@ Debounce logic works as following:
 -	Timer should be able to count until designated time 
 -	We divide high and low logic to states as:
     o	Initial, zero, zero to one, one, and one to zero
+        
         - Initial is initial state of the input signal. If it is zero we are moving to zero state. Else we are starting from state one. Assume initial state is zero.
+        
         - We are moving from zero to one state if, rising edge detected. In this state timer enabled and if timer counts until designated time we are moving to state one.  
         - Reverse logic is applied to move from “one to zero” state and “zero” state
